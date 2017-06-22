@@ -20,16 +20,21 @@ public class Link {
     private long id;
 
     @NotNull
-    private String fname;
+    private String title;
+
+    private Date timeStamp;
     @NotNull
-    private String lname;
-    //private Date timeStamp;
-    @NotNull
-    private String link;
+    private String hyperLink;
+
+    private String user;
 
 
-    public Link() {
-       // timeStamp = new Date();
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public long getId() {
@@ -40,35 +45,27 @@ public class Link {
         this.id = id;
     }
 
-    public String getLink() {
-        return link;
+    public String getTitle() {
+        return title;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getFname() {
-        return fname;
-    }
-
-    public void setFname(String fname) {
-        this.fname = fname;
-    }
-
-    public String getLname() {
-        return lname;
-    }
-
-    public void setLname(String lname) {
-        this.lname = lname;
-    }
-/*
     public Date getTimeStamp() {
         return timeStamp;
     }
 
     public void setTimeStamp(Date timeStamp) {
         this.timeStamp = timeStamp;
-    }*/
+    }
+
+    public String getHyperLink() {
+        return hyperLink;
+    }
+
+    public void setHyperLink(String hyperLink) {
+        this.hyperLink = hyperLink;
+    }
 }
